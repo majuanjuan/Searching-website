@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block body %} 
+     <h3>Search out:</h3>
+  <table class="users">
+  {% for users in users %}
+    <tr>
+    <td style=" color: #00BFF7;">{{ users.model }} </td>
+    <td style=" color: #0091BC;">&nbsp;&nbsp;{{ users.sn }} </td>
+    <td style=" color: #006989;">&nbsp;&nbsp;{{ users.status}} </td>
+    <td style=" color: #00394A;">&nbsp;&nbsp;{{ users.user}}</td>
+    </tr>
+  {% else %}
+    <li><em>Coming soon</em></li>
+  {% endfor %}
+
+{% endblock %}
