@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+{% block body %}
+  {% if session.logged_in %}
+     <div id="searching">
+    <form action="{{ url_for('dosearchuser') }}" method="post" > 
+    <h3>Searching by：</h3>
+    &nbsp;User:&nbsp;&nbsp;
+    <input type="text" name="machine_users">&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="submit" value="Search!">
+    </form> 
+    <br>
+    <form action="{{ url_for('dosearchstatus') }}" method="post" > 
+    Status:
+    <input type="text" name="machine_status">&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="submit" value="Search!">
+    </form> 
+    </div>  
+  
+
+    <div id="add">
+    <form action="{{ url_for('add_entry') }}" method="post" class="add-entry">
+      <h3>Add in as：</h3>
+        Model:
+        <input type="text" size="20" name="model">&nbsp;&nbsp;
+        S/N:&nbsp;&nbsp;
+        <input type="text" size="20" name="sn"><br><br>
+        Status:
+        <input type="text" size="20" name="status">&nbsp;&nbsp;
+        User:
+        <input typr="text" size="20" name="user"> <br><br>
+        <input type="submit" value="Add it !"><br><br><br>
+    </form>
+    </div>
+
+  {% endif %}
+   
+   <div id="show"> 
+  <h4>Current Hardware List</h4>
+  <table class="entries" cellpadding="5">
+  {% for entry in entries %}
+    <tr>
+    <td style=" color: #00BFF7;">{{ entry.model }} &nbsp;&nbsp;&nbsp;</td>
+    <td style=" color: #0091BC;">{{ entry.sn }} &nbsp;&nbsp;&nbsp;</td>
+    <td style=" color: #006989;">{{ entry.status}} &nbsp;&nbsp;&nbsp;</td>
+    <td style=" color: #00394A;">{{ entry.user}}&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+  {% else %}
+    <li><em>Coming soon</em></li>
+  {% endfor %}
+   </table>
+   </div>
+
+   <div id="remove">
+   <form action="{{ url_for('remove_entry') }}" method="post">
+    <h3>Remove data as：</h3>
+        S/N:&nbsp;&nbsp;
+        <input type="text" size="20" name="rmsn">
+        <input type="submit" value="Remove !">
+    </form>
+   </div>
+{% endblock %}
