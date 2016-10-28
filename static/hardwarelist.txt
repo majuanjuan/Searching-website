@@ -1,10 +1,10 @@
 HP-Z220-20,6CR312WR7V,YanpingLiu,Expired
 HP-Z220-21,6CR312WR83,SongLiu,Expired
-LenovoThinkCentreM8300t,NA61090742,Song Liu,Expired
-DellOptiplex.780HMK3B3X,SongLiu,Expired
-LenovoThinkVision,3M04353C2763642,SongLiu.Expired
+LenovoThinkCentreM8300t,NA61090742,SongLiu,Expired
+DellOptiplex,780HMK3B3X,SongLiu,Expired
+LenovoThinkVision,3M04353C2763642,SongLiu,Expired
 HPCompaqLE2202x,CNT228M14V,QianqianZhang,Expired
-HPElite8300MT,CNG2329Q9P,QianqianZhang,Expired	
+HPElite8300MT,CNG2329Q9P,QianqianZhang,Expired
 Dell,F4YHZZ1,QianqianZhang,Expired
 Dell,0J093G-64180-957-0P4M,QianqianZhang,Expired
 HPCompaqElite8300SFF,CNG2320FWX,ShihuiLiu,Expired
@@ -21,10 +21,10 @@ DellE210Hc,CN-0DNWPC-64180-018-03TL,YuefenLiu,Expired
 HP,CNG93200ZS,YuefenLiu,Expired
 LenovoThinkStation,E30PBZAWB3,WeiLiu,Expired
 LenovoThinkStation,E30PBZAWB4,WeiLiu,Expired
-Dell,CN-0DNWPC-64180-023-0HML,WeiLiu,Expired	
-Dell,CN-08PJ5M-74261-15C-1C7M,WeiLiu,Expired	
-HPCompaq8200EliteMTPC,CNG1519NTC,HongSun,Expired	
-LenovoWorkstation,E30R8LB7RP,HongSun,Expired	
+Dell,CN-0DNWPC-64180-023-0HML,WeiLiu,Expired
+Dell,CN-08PJ5M-74261-15C-1C7M,WeiLiu,Expired
+HPCompaq8200EliteMTPC,CNG1519NTC,HongSun,Expired
+LenovoWorkstation,E30R8LB7RP,HongSun,Expired
 LenovoThinkVisionL2321pwd,OM04354B5060217,HongSun,Expired
 LenovoThinkVision,04353B3769435,None,Free
 DellOptiplex755,VXKH2X,None,Free
