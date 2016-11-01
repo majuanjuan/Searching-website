@@ -8,17 +8,17 @@ Step:
 
 2.edit conf doocument with : # vi /etc/httpd/conf/httpd.conf
 insert these into httpd.conf:
-<VirtualHost *>
+< VirtualHost *>
  ServerName example.com
 
  WSGIScriptAlias / /var/www/app/service.wsgi
  WSGIScriptReloading On
 
- <Directory /var/www/html/appname/>
+ < Directory /var/www/html/appname/>
      Order deny,allow
      Allow from all
- </Directory>
-</VirtualHost>
+ < /Directory>
+< /VirtualHost>
 
 3.move your app into /var/www/html
 
